@@ -1,0 +1,33 @@
+.head-box{
+    margin: 25px 4vw 10px 4vw;
+    background-color: #5c677d;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 25px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-section{
+    display: flex;
+    font-size: 24px;
+    gap: 10px;
+}
+.logo-section img{
+    width: 40px;
+    height: 40px;
+}
+.logo-section p{
+    margin: 0px;
+    font-weight: bold;
+}
+.button-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-right: 50px;
+    font-size: 18px;
+    padding-top: 4px;
+    font-weight: 500;
+}
