@@ -1,12 +1,16 @@
 .head-box{
-    margin: 25px 4vw 10px 4vw;
-    background-color: #5c677d;
+    margin: 20px 2vw 10px 2vw;
+    background-color: #5c677da4;
+    backdrop-filter: blur(8px); /* Apply blur effect */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
     color: black;
-    border-radius: 8px;
+    border-radius: 25px;
     padding: 10px 25px 10px 20px;
     display: flex;
     justify-content: space-between;
-
+    position: sticky ;
+    top: 5px;
+    z-index: 1000;
 }
 
 .logo-section{
@@ -27,7 +31,7 @@
     justify-content: space-between;
     gap: 40px;
     padding-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 4px;
     font-weight: 500;
 }
