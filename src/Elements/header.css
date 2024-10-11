@@ -24,7 +24,8 @@
 }
 .logo-section p{
     margin: 0px;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 500;
 }
 .button-section{
     display: flex;
@@ -34,4 +35,6 @@
     font-size: 20px;
     padding-top: 4px;
     font-weight: 500;
+    color: #fff;
+
 }

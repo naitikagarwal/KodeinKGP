@@ -9,10 +9,10 @@ function Header() {
                 <p>KodeinKGP</p>
             </div>
             <div className="button-section">
-                <div>Home</div>
+                {/* <div>Home</div>
                 <div>Team</div>
                 <div>Articles</div>
-                <div>Events</div>
+                <div>Events</div> */}
             </div>
         </div>
     </>

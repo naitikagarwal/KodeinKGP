@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.c-container{
+    margin-top: 30px;
+    border-radius: 20px;
+    margin: 30px 20px 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    /* width: 90vw; */
+    background-color: #023d7daf;
+    flex-wrap: wrap;
+
+}
+
+.leftBox{
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 20px;
+    /* border: solid white 1px;
+    border-radius: 20px 0px 0px 20px; */
+}
+.leftBox div{
+    height: 300px;
+    width: 300px;
+}
+.rightContent{
+    font-family: "Merriweather Sans", sans-serif;
+    flex: 2;
+    padding-left: 20px;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.rightHead{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .c-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+    .leftBox {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 0px;
+        text-align: center; 
+        padding-left: 12px;
+      }
+}

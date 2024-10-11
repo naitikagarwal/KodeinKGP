@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './home-page.css'
 import Lottie from 'lottie-react'
+import { motion } from 'framer-motion';
 import animationData from './First.json'
+import web from './web.json'
+import ai from './ai.json'
+import blockchain from './blockchain.json'
 import CounterCard from './counterCards';
+import CompetenceBox from './competenceBox';
 function HomePage() {
   const [showText, setShowText] = useState(false);
     const [isMoving, setIsMoving] = useState(true);
@@ -52,6 +57,29 @@ function HomePage() {
           <CounterCard title={"Articles "} digit={17}/>
           <CounterCard title={"Events"} digit={15}/>
           <CounterCard title={"Community Members"} digit={700} xtra={'0'}/>
+        </div>
+        <div className="competence-section">
+            <div className="competence-header">
+              <div className="moving-underline-text">
+                <p className='competence-section'>Our Competence</p>
+                <motion.div
+                  className="underline"
+                  initial={{ width: '50%', x: 0 }}
+                  animate={{ 
+                    x: ['-20%', '20%', '-20%'], // Move left and right
+                    width: ['30%', '70%', '30%'], // Vary length
+                  }}
+                  transition={{ 
+                    duration: 2, 
+                    ease: 'easeInOut', 
+                    repeat: Infinity 
+                  }}
+                />
+              </div>
+            </div>
+            <CompetenceBox animat = {<Lottie animationData={web}/>} heading={"Web"} info={"Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality"} />
+            <CompetenceBox animat = {<Lottie animationData={ai}/>} heading={"AI & Metaverse"} info={"Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible."} />
+            <CompetenceBox animat = {<Lottie animationData={blockchain}/>} heading={"Blockchain"} info={"Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency."} />
         </div>
      
 
