@@ -79,9 +79,9 @@ function HomePage() {
                 />
               </div>
             </div>
-            {/* <CompetenceBox animat = {<Lottie animationData={web}/>} heading={"Web"} info={'"Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality."'} /> */}
-            {/* <CompetenceBox animat = {<Lottie animationData={ai}/>} heading={"AI & Metaverse"} info={"'Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.'"} /> */}
-            {/* <CompetenceBox animat = {<Lottie animationData={blockchain}/>} heading={"Blockchain"} info={'"Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency."'} /> */}
+            <CompetenceBox animat = {<Lottie animationData={web}/>} heading={"Web"} info={'"Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality."'} />
+            <CompetenceBox animat = {<Lottie animationData={ai}/>} heading={"AI & Metaverse"} info={"'Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.'"} />
+            <CompetenceBox animat = {<Lottie animationData={blockchain}/>} heading={"Blockchain"} info={'"Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency."'} />
         </div>
         <a href="https://kodeinkgp.in/pds"><PdsStuck/></a>
         
