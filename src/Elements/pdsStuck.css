@@ -2,7 +2,7 @@
     background-color: #7d859795;
     border-radius: 10px;
     padding: 5px 20px 5px 20px;
-    margin: 15px 30px;
+    margin: 15px 60px;
     min-height: 200px;
     display: flex;
     justify-content: space-around;
@@ -34,10 +34,11 @@
 
 @media (max-width: 768px) {
     .p-container {
-      flex-direction: column; /* Stack items vertically on small screens */
+      flex-direction: column;
+       margin: 15px 20px;
     }
     .leftContent {
-        /* text-align: center;  */
+       
         padding-left: 5px;
       }
       .rightBox div{

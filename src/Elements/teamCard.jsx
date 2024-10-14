@@ -2,6 +2,7 @@ import React from 'react'
 import './teamCard.css'
 import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 
+
 function Teamcard({Position, name, insta, fb, li}) {
   return (
     <>

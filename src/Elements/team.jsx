@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./team.css"
 // import Teamcard from './teamCard'
 import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import AOS from "aos";
 
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft  } from "react-icons/fa";
 
@@ -15,14 +17,15 @@ import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 
 
 function Team() {
+  useEffect(()=>{
+    AOS.init();
+  },[ ])
+
   return (
     <>
-    {/* <div className="mainSec">
-        <div className="heading"></div>
-        <Teamcard name={'Aadish Jain'} insta={"/team"} fb={"/team"} li={"/team"}Position={'Executive Head'}/>
-    </div> */}
+
       
-      <div className="container">
+      <div className="container" data-aos="fade" data-aos-duration="2000">
         <h1 className='heading'>Heads</h1>
         <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={true} loop={true} slidesPerView={'auto'} coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 2.5,
          }}
@@ -50,7 +53,7 @@ function Team() {
           <SwiperSlide> 
             <div className="head1">Executive Head</div>
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQEWCH76MQmrZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1672861985385?e=1729123200&v=beta&t=3HvWxf1h0-NPeCh3qePjJ7gQbkuBPh74QYXiOhLQ4j8" alt="" />
-            <div className="name">Aadish Jain</div>
+            <div className="name">Akash Manna</div>
             <div className="handles">
               <a href="" target="_blank" rel="noopener noreferrer"><FaInstagram size={25}/></a>
               <a href="" target="_blank" rel="noopener noreferrer"><FaFacebook size={25}/></a>

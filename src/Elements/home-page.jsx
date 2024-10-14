@@ -3,9 +3,10 @@ import './home-page.css'
 import Lottie from 'lottie-react'
 import { motion } from 'framer-motion';
 import animationData from './First.json'
-import web from './web.json'
-import ai from './ai.json'
-import blockchain from './blockchain.json'
+
+import AOS from "aos";
+import 'aos/dist/aos.css'
+
 import CounterCard from './counterCards';
 import CompetenceBox from './competenceBox';
 import PdsStuck from './pdsStuck';
@@ -13,6 +14,10 @@ import Footer from './footer';
 function HomePage() {
   const [showText, setShowText] = useState(false);
     const [isMoving, setIsMoving] = useState(true);
+
+    useEffect(()=>{
+      AOS.init({duration:800});
+    },[ ])
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -27,10 +32,10 @@ function HomePage() {
   };
   return (
     <>
-        <div className="first-home">
+        <div className="first-home" data-aos="fade" data-aos-duration="2000">
             <div className="left-container">
                 <p className='unlock'>Unlock the Potential of Web 3.0's with <br /> 
-                <p className='headText'>KodeinKGP</p>
+                <p className='headText'  data-aos="slide-right" data-aos-duration="1000">KodeinKGP</p>
                 </p>
                 <p className='mainSecond'>A student-run society exploring Web 3.0, Blockchain, and AI through workshops, hackathons, and real-world projects. Join us to gain cutting-edge skills, drive social impact, and shape the future of technology. <br /> 
                 {!showText && (
@@ -50,11 +55,11 @@ function HomePage() {
             </div> </p>
                                 
             </div>
-            <div className="rightContainer">
+            <div className="rightContainer" data-aos="slide-left" data-aos-duration="2000">
               <Lottie animationData={animationData}/>
             </div>
         </div>
-        <div className="cardSection">
+        <div className="cardSection" >
           <CounterCard title={"PDS Problems"} digit={260}/>
           <CounterCard title={"Articles "} digit={17}/>
           <CounterCard title={"Events"} digit={15}/>
@@ -79,9 +84,8 @@ function HomePage() {
                 />
               </div>
             </div>
-            <CompetenceBox animat = {<Lottie animationData={web}/>} heading={"Web"} info={'"Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality."'} />
-            <CompetenceBox animat = {<Lottie animationData={ai}/>} heading={"AI & Metaverse"} info={"'Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.'"} />
-            <CompetenceBox animat = {<Lottie animationData={blockchain}/>} heading={"Blockchain"} info={'"Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency."'} />
+            <CompetenceBox/>
+            
         </div>
         <a href="https://kodeinkgp.in/pds"><PdsStuck/></a>
         

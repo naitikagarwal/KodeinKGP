@@ -12,10 +12,11 @@
 }
 .headText{
     margin: 0px;
+    margin-bottom: 20px;
     font-size: 60px;
     font-weight: 700;
     background: #0076F3;
-    background: linear-gradient(to bottom right, #0076F3 0%, #11F3FF 100%);
+    background: linear-gradient(to bottom right, #0068d7 0%, #82f9ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -45,9 +46,11 @@
 }
 
 .text-containr {
+    padding-top: 15px;
+    padding-left: 20px;
     text-align: left;
     color: white;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     transition: opacity 1.5s ease;
 }
 .arrow img{

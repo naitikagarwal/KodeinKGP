@@ -1,6 +1,12 @@
 import {useEffect, useState} from 'react'
 import './counterCards.css'
+import AOS from "aos";
+import 'aos/dist/aos.css'
 function CounterCard({title, digit, xtra}) {
+  useEffect(()=>{
+    AOS.init();
+  },[ ])
+
     const [count, setCount] = useState(0);
     const [hasAnimated, setHasAnimated] = useState(false); 
 
@@ -39,7 +45,7 @@ function CounterCard({title, digit, xtra}) {
     }, [hasAnimated]); 
   return (
     <>
-      <div className="cContainer">
+      <div className="cContainer" data-aos="fade-up" data-aos-duration="500" data-aos-offset="200">
         <div className="digits" id='counter'>{count}{xtra}+</div>
         <div className="CardTitle">{title}</div>
       </div>

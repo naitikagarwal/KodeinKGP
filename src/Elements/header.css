@@ -102,3 +102,20 @@ html, body {
         display: none;
     }
 }
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    width: 110%;
+    height: 0px; 
+    border-radius: 5px;
+    background-color: rgba(0, 251, 255, 0.586); 
+    opacity: 1; 
+    transition: height 0.4s ease, opacity 0.4s ease; 
+  }
+
+  .c:hover .bottom-bar {
+    height: 10%; /* Bar height when hovered */
+    opacity: 1; /* Fully visible */
+  }
