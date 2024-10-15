@@ -1,3 +1,11 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
 *{
     margin: 0px;
+}
+
+.active  {
+    color: aqua;
 }

@@ -61,17 +61,22 @@ html, body {
     cursor: pointer;
     font-size: 24px;
     color: white;
-    display: none; /* Initially hidden */
+    display: none; 
+}
+
+.close{
+    cursor: pointer;
 }
 
 .fullscreen-menu {
-    position: fixed; /* Fixed position to cover the whole screen */
+    font-size: 20px;
+    position: fixed; 
     top: 0;
     right: 0;
     min-width: 80%;
     min-height: 100vh;
-    background: #001233; /* Dark background with transparency */
-    color: white; /* Text color */
+    background: #001233; 
+    color: white; 
     display: flex;
     gap: 40px;
     flex-direction: column; 
@@ -116,6 +121,6 @@ html, body {
   }
 
   .c:hover .bottom-bar {
-    height: 10%; /* Bar height when hovered */
-    opacity: 1; /* Fully visible */
+    height: 10%; 
+    opacity: 1; /*  */
   }

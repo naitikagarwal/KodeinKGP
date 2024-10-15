@@ -14,6 +14,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
 import { Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
+import Footer from './footer';
 
 
 function Team() {
@@ -166,7 +167,7 @@ function Team() {
         </Swiper>
       </div>
 
-
+      <Footer/>
     </>
   )
 }

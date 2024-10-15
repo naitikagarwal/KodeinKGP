@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import "./header.css";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import AOS from "aos";
 import 'aos/dist/aos.css'
 function Header() {
@@ -24,11 +24,11 @@ function Header() {
             </div>
             <div className="button-section">
               <div className="b-screen">
-              <div className='c' data-aos="slide-down" data-aos-duration="2000"><Link to="/">Home</Link><div className="bottom-bar"></div></div>
+              <div className='c' data-aos="slide-down" data-aos-duration="2000"><NavLink to="/">Home</NavLink><div className="bottom-bar"></div></div>
               
-                <div className='c' data-aos="slide-down" data-aos-duration="2500"><Link to="/team">Team</Link><div className="bottom-bar"></div></div>
-                <div className='c' data-aos="slide-down" data-aos-duration="3000"><Link to="/article">Articles</Link><div className="bottom-bar"></div></div>
-                <div className='c' data-aos="slide-down" data-aos-duration="3000"><Link to="/event">Events</Link><div className="bottom-bar"></div></div>
+                <div className='c' data-aos="slide-down" data-aos-duration="2500"><NavLink to="/team">Team</NavLink><div className="bottom-bar"></div></div>
+                <div className='c' data-aos="slide-down" data-aos-duration="3000"><NavLink to="/article">Articles</NavLink><div className="bottom-bar"></div></div>
+                <div className='c' data-aos="slide-down" data-aos-duration="3000"><NavLink to="/event">Events</NavLink><div className="bottom-bar"></div></div>
               </div>
               <div className="hamburger" onClick={toggleMenu}>
                     ☰
@@ -37,10 +37,10 @@ function Header() {
                     <div className="fullscreen-menu" data-aos="slide-left" data-aos-duration="1000">
                         <div className="close" onClick={toggleMenu}>✖</div>
                         <div className="menu-items">
-                        <div onClick={toggleMenu}><Link to="/">Home</Link></div>
-                        <div onClick={toggleMenu}><Link to="/team">Team</Link></div>
-                        <div onClick={toggleMenu}><Link to="/article">Articles</Link></div>
-                        <div onClick={toggleMenu}><Link to="/event">Events</Link></div>
+                        <div onClick={toggleMenu}><NavLink to="/">Home</NavLink></div>
+                        <div onClick={toggleMenu}><NavLink to="/team">Team</NavLink></div>
+                        <div onClick={toggleMenu}><NavLink to="/article">Articles</NavLink></div>
+                        <div onClick={toggleMenu}><NavLink to="/event">Events</NavLink></div>
                         </div>
                     </div>
                 )}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada:wght@400;700&family=Rowdies:wght@300;400;700&display=swap');
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.leftDiv h1{
+    font-family: "Rowdies", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    background: #005EFF;
+    margin: 20px 0px;
+background: linear-gradient(to top, #00FFF7 11%, #00afe0 67%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.leftDiv{
+    font-family: "Rowdies", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+.leftDiv p{
+    font-size: 28px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+.rightDiv img{
+    max-width: 300px;
+    transition: scale 2s ease;
+}
+
+.cardSection2{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:  10px 30px 10px 30px; */
+    font-family: "Montserrat", serif;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+.rightDiv img:hover{
+    scale: 1.2;
+}
+.rightDiv{
+    padding: 20px 0px 0px 5vw;
+    overflow: hidden;
+}
+
+.cimage{
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.date{
+    text-align: left;
+    color: rgb(255, 217, 0);
+    font-weight: 500;
+    padding: 10px 0px;
+}
+@media (min-width: 768px) {
+    .rightDiv img{
+        max-width: 400px;  
+    }
+    .leftDiv {
+    margin: 20px 0px;
+    }
+}
