@@ -51,7 +51,8 @@ function HomePage() {
                 - Develop valuable technical expertise <br />
                 - Contribute to meaningful projects addressing pressing issues <br />
                 - Stay ahead of the curve in the rapidly evolving tech landscape</p>
-                <button className={`button-24`} role="button">Explore our Events</button>
+                <a href="https://kodeinkgp.in/events"><button className={`button-24`} role="button">Explore our Events</button></a>
+                
                   </p>
                   }
             </div> </p>

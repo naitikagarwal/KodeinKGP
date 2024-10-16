@@ -18,17 +18,20 @@ function Header() {
     <>
         <div className={` head-box `} data-aos="slide-down" data-aos-duration="500"
      >
-            <div className="logo-section">
+            <a href="/">
+              <div className="logo-section">
                 <img src="/assets/kik-logo.png"/>
                 <p>KodeinKGP</p>
             </div>
+            </a>
+            
             <div className="button-section">
               <div className="b-screen">
               <div className='c' data-aos="slide-down" data-aos-duration="2000"><NavLink to="/">Home</NavLink><div className="bottom-bar"></div></div>
               
                 <div className='c' data-aos="slide-down" data-aos-duration="2500"><NavLink to="/team">Team</NavLink><div className="bottom-bar"></div></div>
                 <div className='c' data-aos="slide-down" data-aos-duration="3000"><NavLink to="/article">Articles</NavLink><div className="bottom-bar"></div></div>
-                <div className='c' data-aos="slide-down" data-aos-duration="3000"><NavLink to="/event">Events</NavLink><div className="bottom-bar"></div></div>
+                <div className='c' data-aos="slide-down" data-aos-duration="3000"><NavLink to="https://kodeinkgp.in/events">Events</NavLink><div className="bottom-bar"></div></div>
               </div>
               <div className="hamburger" onClick={toggleMenu}>
                     ☰
@@ -40,7 +43,7 @@ function Header() {
                         <div onClick={toggleMenu}><NavLink to="/">Home</NavLink></div>
                         <div onClick={toggleMenu}><NavLink to="/team">Team</NavLink></div>
                         <div onClick={toggleMenu}><NavLink to="/article">Articles</NavLink></div>
-                        <div onClick={toggleMenu}><NavLink to="/event">Events</NavLink></div>
+                        <div onClick={toggleMenu}><NavLink to="https://kodeinkgp.in/events">Events</NavLink></div>
                         </div>
                     </div>
                 )}
