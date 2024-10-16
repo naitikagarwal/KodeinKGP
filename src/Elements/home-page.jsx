@@ -7,6 +7,8 @@ import animationData from './First.json'
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
+import StaggerText from "react-stagger-text";
+
 import CounterCard from './counterCards';
 import CompetenceBox from './competenceBox';
 import PdsStuck from './pdsStuck';

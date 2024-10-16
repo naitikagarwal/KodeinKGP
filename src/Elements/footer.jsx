@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaMedium, FaLinkedin} from "react-icons/fa";
 import './footer.css'
 function Footer() {
   return (
+    <>
     <div className='footer'>
         <div className="right">
             <div className="logoSec">
@@ -28,6 +29,9 @@ function Footer() {
         </div>
     
     </div>
+    <p className='lastFooter'>{"Made with ❤️ and </>"} </p>
+    </>
+    
   )
 }
 

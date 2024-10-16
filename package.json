@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animated-cursor": "^1.2.0",
     "aos": "^2.3.4",
     "framer-motion": "^11.11.8",
     "lottie-react": "^2.4.0",
@@ -18,6 +19,7 @@
     "react-icons": "^5.3.0",
     "react-ionicons": "^4.2.1",
     "react-router-dom": "^6.27.0",
+    "react-stagger-text": "^1.1.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
